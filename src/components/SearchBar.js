@@ -55,7 +55,6 @@ export const SearchBar = (props) => {
                                       
                                                     <div className='tobics'> Sun</div>
                                                     <div className='tobics'>Moon</div>
-                                                    <div className='tobics'>James Webb</div>
                                                     <div className='tobics'>Venus</div>
                                                     <div className='tobics'>Jupiter</div>
                                                     <div className='tobics'>Saturn</div>
@@ -72,6 +71,8 @@ export const SearchBar = (props) => {
                                                     <div className='tobics'>Crux</div>
                                                     <div className='tobics'>Aurora</div>
                                                     <div className='tobics'>Andromeda</div>
+                                                    <br/> <br />
+                                                    <div className='tobics'>James Webb</div>
                                                 </div>
 
                                         
