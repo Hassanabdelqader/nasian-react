@@ -1115,32 +1115,14 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-mine{
-  max-width: 25rem;
-  min-width: 10rem;
-  height: 15rem;
-}
-
-.img-responsive-galary,
+.img-responsive,
+.thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  min-width: 100%;
-  height: 30rem;
-}
-
-.thumbnail > img{
-  display: block;
-  max-width:30%;
   height: auto;
-}
-.img-responsive,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-
 }
 .img-rounded {
   border-radius: 6px;

@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/space4.jpg) center center no-repeat;
+  background: url(../img/intro-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -240,75 +240,26 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 140px;
-  padding-bottom: 13px;
+  padding-top: 350px;
+  padding-bottom: 200px;
   text-align: center;
 }
-
-
-/* SaerchBAr Section */
-.ImageParent .intro {
-  display: table;
-  width: 100%;
-  padding: 0;
-  background: url(../img/imgbg1.jpg) center center no-repeat;
-  background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+/* Features Section */
+#features {
+  background: #f6f6f6;
 }
-.ImageParent .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
-}
-.ImageParent .intro h1 {
-  font-family: "Raleway", sans-serif;
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
   color: #fff;
-  font-size: 82px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
-.ImageParent .intro h1 span {
-  font-weight: 600;
-  font-size: small;
-  color: #5ca9fb;
-}
-.ImageParent .intro p {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 30px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-.ImageParent header .intro-text {
-  padding-top: 140px;
-  padding-bottom: 13px;
-  text-align: center;
-}
-.container-tobics{
-  padding: 30px;
-}
-.suggested{
-  color: white;
-}
-.tobics{
-  display: inline;
-  background-color: #333;
-  color: white ;
-  border-radius: 8px;
-  border-radius: 1;
-  padding: 3 6;
-  margin-top: 8px;
-  margin-right: 5px;
-}
-.mb-3{
-  margin-bottom: 7px;
-}
-
-
 /* About Section */
 #about {
   padding: 100px 0;
@@ -356,7 +307,49 @@ header .intro-text {
   line-height: 24px;
   margin: 30px 0;
 }
-
+/* Services Section */
+#services {
+  padding: 100px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  color: #fff;
+}
+#services .service-desc {
+  margin: 10px 10px 20px;
+}
+#services h2 {
+  color: #fff;
+}
+#services .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#services i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+#services h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#services p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#services .service-desc {
+  margin-bottom: 40px;
+}
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
@@ -406,7 +399,46 @@ header .intro-text {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
-
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
 /* Team Section */
 #team {
   padding: 100px 0;
@@ -414,14 +446,14 @@ header .intro-text {
 #team h4 {
   margin: 5px 0;
 }
-.team-img {
-  width: 10rem ;
+#team .team-img {
+  width: 240px;
 }
-.thumbnail{
+#team .thumbnail {
   background: transparent;
   border: 0;
 }
- .thumbnail .caption {
+#team .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
 }
@@ -550,6 +582,21 @@ label {
 #contact .social i.fa:hover {
   color: #608dfd;
   background: #fff;
+}
+/* Footer Section*/
+#footer {
+  background: #f6f6f6;
+  padding: 30px 0;
+}
+#footer p {
+  color: #888;
+  font-size: 14px;
+}
+#footer a {
+  color: #608dfd;
+}
+#footer a:hover {
+  border-bottom: 2px solid #608dfd;
 }
 
 @media (max-width: 768px) {
