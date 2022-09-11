@@ -1,0 +1,81 @@
+{
+  "Header": {
+    "title": "Nasaian",
+    "paragraph": "you can discover the space through my website try searching Sun,Eearh,Moon,Galaxy,Jubter, "
+  },
+  "About": {
+    "Disclaimer" :" Desclaimer : It should be noted that NASAIAN is only for educational purposes and not for commercial purposes.", 
+    "Paragraph":  "As it is based on data from the NASA website ,NASAIAN is a site that provides you with either videos or pictures related to your search, where you can search for galaxies, stars, planets, etc.",
+    "Note": " Note : If you want Filtered API for educational purposes, please ",
+    "Why": [
+      "Provides Images",
+      "Provides Videos",
+      "Responisve Pages",
+      "Flexible"
+    ],
+    "Why2": [
+      "Easy to Use",
+      "fast"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Carina Nebula",
+      "largeImage": "img/js1.jpg",
+      "smallImage": "img/js1.jpg"
+
+    },
+    {
+      "title": "Stephan’s Quintet",
+      "largeImage": "img/js2.jpg",
+      "smallImage": "img/js2.jpg"
+
+    },
+    {
+      "title": "Southern Ring Nebula",
+      "largeImage": "img/js3.jpg",
+      "smallImage": "img/js3.jpg"
+
+    },
+    {
+      "title": "SMACS 0723",
+      "largeImage": "img/js5.jpg",
+      "smallImage": "img/js5.jpg"
+    },
+    {
+      "title": "Black Hole",
+      "largeImage": "img/js6.jpg",
+      "smallImage": "img/js6.jpg"
+    },
+    {
+      "title": "Our Sun :)",
+      "largeImage": "img/sun.avif",
+      "smallImage": "img/sun.avif"
+    },
+    {
+      "title": "Guess where is it ",
+      "largeImage": "img/space3.jpg",
+      "smallImage": "img/space3.jpg"
+    },
+    {
+      "title": "Cartwheel Galaxy",
+      "largeImage": "img/js7.jpg",
+      "smallImage": "img/js7.jpg"
+    },
+    {
+      "title": "Our Home ❤",
+      "largeImage": "img/sapce2.jpg",
+      "smallImage": "img/sapce2.jpg"
+    }
+  ],
+  "Contact": {
+    "address": "Jordan, Amman,Amman",
+    "phone": "+962 7890 58158",
+    "email": "terawihassan@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/hassanabdelqader/",
+    "github": "https://github.com/Hassanabdelqader",
+    "facebook": "https://web.facebook.com/7asnMousa/"
+  }
+}
+  
+  
