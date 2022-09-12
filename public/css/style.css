@@ -551,6 +551,24 @@ label {
   color: #608dfd;
   background: #fff;
 }
+/*Card */
+.cardStyle{
+  width: 31rem !important;
+  border: 2px solid black;
+  padding: 1rem;
+  height: auto;
+  margin: 1rem
+}
+
+.CardsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  background-color: #fff;
+  color: #444;
+  margin : 1rem
+}
+
 
 @media (max-width: 768px) {
   #about img {
