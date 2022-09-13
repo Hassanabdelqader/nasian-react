@@ -251,7 +251,8 @@ header .intro-text {
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/imgbg1.jpg) center center no-repeat;
+  /* ../img/imgbg1.jpg */
+  background: url("https://wallpapercave.com/wp/wp9391838.jpg") center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;

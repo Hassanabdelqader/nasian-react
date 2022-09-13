@@ -6,10 +6,10 @@ import Content from './Content';
 {/* <h1>Show it itititi{props.data}</h1> */}
 
 function ShowResult(props) {
-    
+    // 
     const [content , setContent] = useState({
         Background : "https://wallpapercave.com/wp/wp8144363.jpg",
-        Title : "",
+        Title : "Disclaimer: We would like to disclaim all responsibility, as all this data was brought from the NASA website and it belongs to the NASA website, and this project has been used for non-commercial purposes",
         Center : "",
         DateCreated : "",
         Description:"",
@@ -26,18 +26,17 @@ function ShowResult(props) {
     })
     
     useEffect(() => {
-        if(content){
-            console.log(content)
-            window.scrollTo(0, 0) 
-        }else{
-            console.log(content)
-            window.scrollTo(0, 435)
-        }
-    });
+        window.scrollTo(0, 435)
+    },content);
+    
+    useLayoutEffect(()=>{
+        window.scrollTo(0, 0) 
+    })
 
+    
 
-   const handlebtn = (e)=>{
-    setContent(e)
+    const handlebtn = (e)=>{
+        setContent(e)
     }
 
     return (
