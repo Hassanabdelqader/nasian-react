@@ -1,23 +1,29 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import Content from './Content';
+
 
 //src="holder.js/100px160"
 
 
-function Cards() {
+function Cards(props) {
+  
   return (
     <Card style={{ width: '18rem' }} className=' cardStyle text-center'>
-      <Card.Img variant="top" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+      <Card.Img variant="top" src={props.dataAPI.Background}
       width={285}
       height={400}
       />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{props.dataAPI.Title }</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {props.dataAPI.Description}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        {/* window.scrollTo(0, 435) */}
+           <button className="content-btn" onClick={()=>{props.handlebtn(props.dataAPI)}}>
+           <i class="fa fa-arrow-circle-right">  Open</i>
+         </button>
       </Card.Body>
     </Card>
   );

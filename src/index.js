@@ -7,9 +7,7 @@ import Image from './components/ImagesRoute';
 import { Navigation } from './components/navigation';
 import { Contact } from './components/contact';
 import Videos from './components/VideosRoute';
-import { About } from './components/about';
-import { Gallery } from './components/gallery';
-import { Developer } from './components/Developer';
+import Content from './components/Content';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +18,7 @@ ReactDOM.render(
       <Route path="/Home" element={<App />} />
       <Route path="/Image" element={<Image />} />
       <Route path="/Video" element={<Videos />} />
+      <Route path="/content" element={<Content />} />
     </Routes>
     <Contact />
   </BrowserRouter>
