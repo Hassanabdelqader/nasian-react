@@ -6,9 +6,10 @@ import Form from "react-bootstrap/Form";
 
 
 
-export const SearchBar = (props) => {
+export const SearchBarVideo = (props) => {
   const [Search, setSearch] = useState("");
   const [isLoading, setLoading] = useState(false);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,21 +24,22 @@ export const SearchBar = (props) => {
   const fetchData =  (search)=>{
     console.log(Search)
 
+    axios.get(`https://servernasian.herokuapp.com/api/videos/?q=${Search}`)
+    .then((response)=>{
+     setLoading(false);
+     props.getData(response.data)
+    })
+    .catch((err)=>{
+     setLoading(false);
+     console.log(`there is an error ${err}`)
+    })
+ 
 
-   axios.get(`https://servernasian.herokuapp.com/api/images/?q=${Search}`)
-   .then((response)=>{
-    setLoading(false);
-    props.getData(response.data)
-   })
-   .catch((err)=>{
-    setLoading(false);
-    console.log(`there is an error ${err}`)
-   })
-
+  
   }
 
   return (
-    <div className="ImageParent">
+    <div className="VideoParent">
       <header id="header">
         <div className="intro">
           <div className="overlay">
@@ -48,7 +50,7 @@ export const SearchBar = (props) => {
                     {"NASAIAN"}
                     <br />
                     <span>
-                      The internet’s source of images. Powered by NASAIAN
+                      The internet’s source of Video. Powered by NASAIAN
                       everywhere
                     </span>
                   </h1>

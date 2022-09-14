@@ -9,7 +9,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-size: cover;
+    background-size: contain;
     height: auto;
     width: auto;
     border: 2px double red;

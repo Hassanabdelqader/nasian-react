@@ -17,7 +17,7 @@ export const Developer = (props) => {
                     <img src={imgMine} alt='...' className='img-mine' />
                     <div className='caption'> 
                       <h4>{"Hasan Mousa "}</h4>
-                      <p>{'MERN Developer'}</p>
+                      <p>{'Full Stack Developer'}</p>
                     </div>
                   </div>
         </div>

@@ -28,7 +28,7 @@ export const Contact = (props) => {
       .then(
         (result) => {
           Swal.fire(
-            'Good job!',
+            'Thanl for contacting us ',
             'Email Sent Successfully ',
             'success'
           )

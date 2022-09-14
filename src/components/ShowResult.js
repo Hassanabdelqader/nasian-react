@@ -1,42 +1,21 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
-import { Button, Card } from 'react-bootstrap';
+import React, {  useState } from 'react';
 import Cards from './Cards';
-import Modals from './Content';
 import Content from './Content';
-{/* <h1>Show it itititi{props.data}</h1> */}
 
 function ShowResult(props) {
     // 
     const [content , setContent] = useState({
-        Background : "https://wallpapercave.com/wp/wp8144363.jpg",
-        Title : "Disclaimer: We would like to disclaim all responsibility, as all this data was brought from the NASA website and it belongs to the NASA website, and this project has been used for non-commercial purposes",
-        Center : "",
-        DateCreated : "",
-        Description:"",
+        url : "https://wallpapercave.com/wp/wp8144363.jpg",
+        title : "Disclaimer: We would like to disclaim all responsibility, as all this data was brought from the NASA website and it belongs to the NASA website, and this project has been used for non-commercial purposes",
+        center : "",
+        date_created : "",
+        description:"",
     })
-    
-    const [Data , setData] = useState({
-        Background : "https://cdn.saffire.com/images.ashx?t=ig&rid=TheBigE&i=xfinity_arena_-_Featured_Photo.jpg",
-        Title : "Sun Shines in High-EnergyHigh-EnergyHigh-EnergyHigh-EnergyHigh-EnergyHigh-Energy X-rays",
-        Center : "JPL",
-        DateCreated : "`2014-12-22T18:53:13Z`",
-        Description:"Sun Shines in High-EnergyHigh-EnergyHigh-EnergyHigh-EnergyHigh-EnergyHigh-Energy X-rays",
-        
-       
-    })
-    
-    useEffect(() => {
-        window.scrollTo(0, 435)
-    },content);
-    
-    useLayoutEffect(()=>{
-        window.scrollTo(0, 0) 
-    })
-
-    
-
+   
     const handlebtn = (e)=>{
         setContent(e)
+        window.scrollTo(0, 435)
+
     }
 
     return (
@@ -48,9 +27,9 @@ function ShowResult(props) {
         }
         <div className='CardsContainer'>
         {
-        
-        [1,2,3,4,5,6,7,8,9,10].map((element,key)=>{
-             return <Cards key={key} data={element} handlebtn={handlebtn}  dataAPI = {Data}/>
+        props.fetchedData &&
+        props.fetchedData.map((element,key)=>{
+             return <Cards key={key} data={element} handlebtn={handlebtn}  dataAPI = {element}/>
         })
         
         }
