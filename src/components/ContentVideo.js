@@ -8,6 +8,7 @@ import { Col, Row } from 'react-bootstrap';
     
     useEffect(() => {    
       videoRef.current?.load();
+      videoRef.current?.play();
     }, [props.data.thumb]);
 
   
@@ -21,7 +22,7 @@ import { Col, Row } from 'react-bootstrap';
     ref={videoRef}
     className='videoit' controls 
       poster={props.data.thumb}
-       muted >
+       autoplay >
        <source src={props.data.url} type="video/mp4" />
             Error Message
       </video>
