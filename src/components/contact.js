@@ -12,8 +12,6 @@ const initialState = {
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState)
 
-  console.log(data.Contact)
-
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
@@ -30,7 +28,7 @@ export const Contact = (props) => {
       .then(
         (result) => {
           Swal.fire(
-            'Good job!',
+            'Thanl for contacting us ',
             'Email Sent Successfully ',
             'success'
           )

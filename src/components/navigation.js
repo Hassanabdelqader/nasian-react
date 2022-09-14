@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 export const Navigation = (props) => {
   return (
@@ -17,9 +17,9 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
+          <Link className='navbar-brand page-scroll' to='/'>
             NASAIAN
-          </a>{' '}
+          </Link>{' '}
         </div>
 
         <div

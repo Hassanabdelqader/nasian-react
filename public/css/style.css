@@ -244,6 +244,92 @@ header .intro-text {
   padding-bottom: 13px;
   text-align: center;
 }
+/* Content Video Page */
+.videoDiv{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background: #efefef;
+  
+  overflow: hidden;
+}
+
+.videoit{
+  height: 500px;
+  position: relative;
+  width: 100%;
+  object-fit: fill;
+  
+}
+.containerh1vid{
+  position: absolute;
+    top: 4%;
+    left: 2%;
+    z-index: 1;
+}
+.content-parentvid{
+  position: absolute;
+    bottom: 30%;
+    left: 2%;
+    z-index: 1;
+}
+
+#topText {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+}
+
+.card-title{
+  overflow: hidden !important;
+}
+
+
+
+/*Search bar for video*/
+
+.VideoParent .intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  /* ../img/imgbg1.jpg */
+  background: url("https://images8.alphacoders.com/468/468739.jpg") center center no-repeat;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.VideoParent .intro .overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.VideoParent .intro h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.VideoParent .intro h1 span {
+  font-weight: 800;
+  font-size: small;
+  color: white;
+}
+.VideoParent .intro p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.VideoParent header .intro-text {
+  padding-top: 140px;
+  padding-bottom: 13px;
+  text-align: center;
+}
 
 
 /* SaerchBAr Section */
@@ -251,7 +337,8 @@ header .intro-text {
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/imgbg1.jpg) center center no-repeat;
+  /* ../img/imgbg1.jpg */
+  background: url("https://wallpapercave.com/wp/wp9391838.jpg") center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -293,6 +380,12 @@ header .intro-text {
 }
 .suggested{
   color: white;
+  
+}
+
+.suggestedVd{
+  color: white;
+  font-weight: 800;
 }
 .tobics{
   display: inline;
@@ -551,6 +644,32 @@ label {
   color: #608dfd;
   background: #fff;
 }
+/*Card */
+.cardStyle{
+  width: 28.5rem !important;
+  border: 2px solid black;
+  padding: 1rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.cardStyle:hover {
+  width: 28.5rem !important;
+  border: 2px solid red;
+  padding: 1rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.CardsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 1rem;
+  background-color: #fff;
+  color: #444;
+  margin : 0rem
+}
+
 
 @media (max-width: 768px) {
   #about img {
