@@ -2,7 +2,13 @@ import { useState } from 'react'
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2'
 import data from '../data/data.json'
+import Address from './Address'
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
+
+const render = (status) => {
+  return <h1>{status}</h1>;
+};
 
 const initialState = {
   name: '',
@@ -11,7 +17,6 @@ const initialState = {
 }
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState)
-
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
@@ -111,15 +116,7 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className='fa fa-map-marker'></i> Address
-                </span>
-                {data.Contact.address ? data.Contact.address : 'loading'}
-              </p>
-            </div>
-            <div className='contact-item'>
+            <h3>Contact Info</h3>
               <p>
                 <span>
                   <i className='fa fa-phone'></i> Phone
@@ -134,6 +131,20 @@ export const Contact = (props) => {
                 </span>{' '}
                 {data.Contact ? data.Contact.email : 'loading'}
               </p>
+            </div>
+            <div className='contact-item'>
+             
+              <div>
+                <span>
+                  <i className='fa fa-map-marker'></i> Address
+                </span>
+                <Wrapper apiKey={"YOUR_API_KEY"} render={render}>
+                
+                <Address />
+                </Wrapper>
+
+                {/* {data.Contact.address ? data.Contact.address : 'loading'} */}
+              </div>
             </div>
           </div>
           <div className='col-md-12'>
