@@ -1,10 +1,15 @@
 import {Link } from "react-router-dom";
+import logo from "../components/innerImage/logo.png"
 
 export const Navigation = (props) => {
   return (
+    <>
+    
+       
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
         <div className='navbar-header'>
+        <img src={logo}  className="navbarlogo" />
           <button
             type='button'
             className='navbar-toggle collapsed'
@@ -17,6 +22,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
+          
           <Link className='navbar-brand page-scroll' to='/'>
             NASAIAN
           </Link>{' '}
@@ -48,5 +54,6 @@ export const Navigation = (props) => {
         </div>
       </div>
     </nav>
+    </>
   )
 }

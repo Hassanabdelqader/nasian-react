@@ -75,6 +75,15 @@ hr {
   padding: 15px;
   transition: all 0.8s;
 }
+.navbarlogo{
+  float: left;
+  height: 50px;
+  padding: 0px;
+  font-size: 22px;
+  line-height: 21px;
+  line-height: 21px;
+  padding-right: 15px;
+}
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
